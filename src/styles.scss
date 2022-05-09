@@ -1,1 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=PT+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+
+
+
+body{
+    font-family: 'Oswald', sans-serif;
+    font-family: 'PT Serif', serif;
+}
+
+.letra-oswal-700{
+    font-family: 'Oswald', sans-serif;
+}
+
+.card{
+
+    background: rgba( 12, 138, 161, 0.2 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 0px );
+    -webkit-backdrop-filter: blur( 0px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+}
