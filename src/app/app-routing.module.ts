@@ -18,6 +18,10 @@ const routes: Routes = [
   {
     path: 'certificacion', 
     loadChildren: ()=> import('./certifiacion/certifiacion.module').then(m=> m.CertifiacionModule)
+  },
+  {
+    path: 'perfil', 
+    loadChildren: ()=> import('./mi-perfil/mi-perfil.module').then(m=> m.MiPerfilModule)
   }
 
 ];
