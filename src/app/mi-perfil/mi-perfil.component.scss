@@ -1,26 +1,103 @@
-
-.grid-perfil{
+.grid-perfil {
     width: 90%;
+    height: 90vh;
     margin: auto;
     display: grid;
-    grid-template-columns: 250px 1fr;
-    grid-template-areas: 'perfil text-perfil';
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-areas:
+        "perfil perfil texto texto texto texto aside-text aside-text"
+        "perfil perfil texto texto texto texto aside-text aside-text"
+        "perfil perfil texto texto texto texto aside-text aside-text"
+        "perfil perfil texto texto texto texto aside-text aside-text";
+    
+
+        background: rgba( 154, 207, 212, 0.7 );
+        box-shadow: 0 8px 20px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 0.5px );
+        -webkit-backdrop-filter: blur( 0.5px );
+        border-radius: 10px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+
     gap: 20px;
 }
-
-.mi-perfil{
-    grid-area: perfil;
-    height: auto;
-
+img{
+border-radius: 50%;
 }
-.mi-perfil address{
+.text-jus{
+    text-align: justify;
+}
+
+.mi-perfil {
     grid-area: perfil;
- 
+    
+}
+
+.mi-perfil address {
+
     display: flex;
     align-items: center;
 
 }
 
+.text-section {
+    grid-area: texto;
+    
+    text-align: justify;
+}
+.div-text{
+    
+    height: 100%;
+}
+
 .text-section{
-    grid-area: text-perfil;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2,1fr);
+    display: flex;
+    justify-content: center;
+    
+}
+
+.dov-i strong,
+.dov-i span{
+ line-height: 30px; 
+}
+
+
+.aside-perfil {
+    grid-area: aside-text;
+    
+}
+
+@media (max-width: 800px) {
+    .grid-perfil {
+        width: 70%;
+        height: auto;
+        margin: auto;
+        display: grid;
+        justify-items: center;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "perfil texto "
+            "aside-text aside-text";
+        
+        gap: 20px;
+    }
+
+    .mi-perfil {
+        grid-area: perfil;
+        
+    
+    }
+
+    .text-section {
+        grid-area: texto;
+        
+    }
+    
+    .aside-perfil {
+        grid-area: aside-text;
+        
+    }
+
 }
