@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MiPerfilComponent implements OnInit {
 
+  imgPerfil = './assets/perfil.jpg';
   constructor() { }
 
   ngOnInit(): void {
